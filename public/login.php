@@ -124,18 +124,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <span>or</span>
                 </div>
 
-                <div class="demo-accounts">
-                    <p class="demo-title">Demo Accounts (for testing):</p>
-                    <div class="demo-credentials">
-                        <div class="demo-item">
-                            <strong>User:</strong> demo / admin123
-                        </div>
-                        <div class="demo-item">
-                            <strong>Admin:</strong> admin / admin123
-                        </div>
-                    </div>
-                </div>
-
                 <div class="auth-footer">
                     <p>Don't have an account? <a href="register.php">Sign Up</a></p>
                 </div>
