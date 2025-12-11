@@ -17,7 +17,6 @@
             <div class="nav-links">
                 <a href="#features">Features</a>
                 <a href="#how-it-works">How It Works</a>
-                <a href="#about">About</a>
                 <a href="login.php" class="btn-login">Login</a>
                 <a href="register.php" class="btn-signup">Sign Up</a>
             </div>

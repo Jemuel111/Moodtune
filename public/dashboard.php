@@ -55,9 +55,9 @@ $moodDistribution = $stmt->fetchAll();
                 <span class="nav-icon">📈</span>
                 <span class="nav-text">History</span>
             </a>
-            <a href="favorites.php" class="nav-item">
-                <span class="nav-icon">❤️</span>
-                <span class="nav-text">Favorites</span>
+            <a href="discover.php" class="nav-item">
+                <span class="nav-icon">🎼</span>
+                <span class="nav-text">Discover</span>
             </a>
             <a href="settings.php" class="nav-item">
                 <span class="nav-icon">⚙️</span>
