@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodTune - AI Music Recommendations</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎵 MoodTune</h1>
+        <p class="subtitle">AI-Powered Music Recommendations Based on Your Behavior</p>
+
+        <div class="info-box">
+            <strong>How it works:</strong> Interact with the area below! Move your mouse, click, and type. Our AI analyzes your behavioral patterns to detect your mood and recommend perfect music.
+        </div>
+
+        <div class="interaction-area" id="interactionArea">
+            <h3>👆 Interact Here!</h3>
+            <p>Move your mouse • Click around • Type something</p>
+            <input type="text" placeholder="Type how you feel..." id="userInput" 
+                   style="width: 100%; padding: 10px; margin-top: 20px; border: 2px solid #667eea; border-radius: 8px; font-size: 1em;">
+        </div>
+
+        <div class="metrics" id="metrics">
+            <div class="metric-card">
+                <div class="metric-value" id="mouseSpeed">0</div>
+                <div class="metric-label">Mouse Speed</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="clickCount">0</div>
+                <div class="metric-label">Clicks</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="typingSpeed">0</div>
+                <div class="metric-label">Typing Speed</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value" id="interactions">0</div>
+                <div class="metric-label">Interactions</div>
+            </div>
+        </div>
+
+        <button id="analyzeBtn">🎯 Analyze My Mood & Get Recommendations</button>
+
+        <div id="results" style="display: none;">
+            <div class="mood-status">
+                <h3>Your Detected Mood</h3>
+                <div class="mood-indicator" id="moodEmoji">😊</div>
+                <h2 id="moodText">Happy</h2>
+                <p id="moodDescription">Your behavior indicates an energetic and positive mood!</p>
+            </div>
+
+            <div class="recommendations">
+                <h3 style="color: #667eea; margin-bottom: 20px;">🎼 Recommended for You</h3>
+                <div id="songList"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.11.0"></script>
+    <script src="js/behaviorTracker.js"></script>
+    <script src="js/moodClassifier.js"></script>
+    <script src="js/musicRecommender.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
