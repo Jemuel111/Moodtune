@@ -88,6 +88,77 @@ try {
                 ]);
                 break;
 
+            case 'get_playlist':
+                // Get all songs for a specific mood
+                $mood = $_GET['mood'] ?? '';
+                
+                if (empty($mood)) {
+                    throw new Exception('Mood parameter is required');
+                }
+
+                $pdo = Database::getConnection();
+                $stmt = $pdo->prepare("
+                    SELECT id, title, artist, genre, mood_category, emoji, energy_level 
+                    FROM music_library 
+                    WHERE mood_category = ?
+                    ORDER BY title ASC
+                ");
+                $stmt->execute([$mood]);
+                $songs = $stmt->fetchAll();
+
+                echo json_encode([
+                    'success' => true,
+                    'mood' => $mood,
+                    'songs' => $songs
+                ]);
+                break;
+
+            case 'get_all_moods':
+                // Get all moods with song counts
+                $pdo = Database::getConnection();
+                $stmt = $pdo->query("
+                    SELECT 
+                        mood_category,
+                        COUNT(*) as song_count,
+                        GROUP_CONCAT(emoji LIMIT 1) as emoji
+                    FROM music_library 
+                    GROUP BY mood_category
+                ");
+                $moods = $stmt->fetchAll();
+
+                echo json_encode([
+                    'success' => true,
+                    'moods' => $moods
+                ]);
+                break;
+
+            case 'search_music':
+                // Search for music
+                $query = $_GET['query'] ?? '';
+                
+                if (strlen($query) < 2) {
+                    throw new Exception('Search query must be at least 2 characters');
+                }
+
+                $pdo = Database::getConnection();
+                $stmt = $pdo->prepare("
+                    SELECT id, title, artist, genre, mood_category, emoji, energy_level 
+                    FROM music_library 
+                    WHERE title LIKE ? OR artist LIKE ? OR genre LIKE ?
+                    ORDER BY title ASC
+                    LIMIT 20
+                ");
+                $searchTerm = "%{$query}%";
+                $stmt->execute([$searchTerm, $searchTerm, $searchTerm]);
+                $results = $stmt->fetchAll();
+
+                echo json_encode([
+                    'success' => true,
+                    'query' => $query,
+                    'results' => $results
+                ]);
+                break;
+
             case 'feedback':
                 if (!Auth::isLoggedIn()) {
                     throw new Exception('Please login to submit feedback');
