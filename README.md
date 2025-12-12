@@ -194,14 +194,6 @@ Visit: `http://localhost/music-mood-recommender/public/index.php`
    - Notification preferences
    - Privacy controls
 
-### Demo Accounts
-
-For testing purposes:
-
-| Username | Password | Role |
-|----------|----------|------|
-| demo | demo123 | User |
-| admin | admin123 | Admin |
 
 ## 🔧 Technology Stack
 
