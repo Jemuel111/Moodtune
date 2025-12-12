@@ -16,7 +16,6 @@ MoodTune is an intelligent music recommendation system that analyzes your behavi
 - 🎼 **Smart Music Recommendations** - Curated playlists matched to your emotional state
 - 📊 **Mood History Tracking** - Visualize your emotional patterns over time
 - 👤 **User Authentication** - Secure login and registration system with role-based access
-- ❤️ **Favorites System** - Save your favorite tracks for quick access
 - 🔍 **Music Discovery** - Browse playlists by mood with 6 distinct categories
 - 📈 **Analytics Dashboard** - Beautiful visualizations of your mood data
 - 🔒 **Privacy Focused** - Your data is encrypted and never shared
@@ -409,12 +408,12 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Email: jemuelballebar1@gmail.com
 
 **Sam Andrei Jimenez**
-- GitHub: [@Sam](https://github.com/Sam)
-- Email: SamAndrei@gmail.com
+- GitHub: [@Drei12345678](https://github.com/Drei12345678)
+- Email: 0323-3585@lspu.edu.ph
 
 **Joseph Balce**
-- GitHub: [@Joseph](https://github.com/Jospeh)
-- Email: Josephbalce@gmail.com
+- GitHub: [@jusiip123](https://github.com/jusiip123)
+- Email: 0323-3564@lspu.edu.ph
 
 ## 🙏 Acknowledgments
 
