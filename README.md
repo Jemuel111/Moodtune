@@ -415,6 +415,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - GitHub: [@jusiip123](https://github.com/jusiip123)
 - Email: 0323-3564@lspu.edu.ph
 
+## Links
+- Canva Link: (https://www.canva.com/design/DAG7MfFOGGg/kM2dT1WEx4qEWqaTmwEo7g/edit?utm_content=DAG7MfFOGGg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 ## 🙏 Acknowledgments
 
 - [Rubix ML](https://rubixml.github.io/ML/) - Powerful PHP machine learning library
