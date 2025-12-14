@@ -417,7 +417,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Links
 - Canva Link: (https://www.canva.com/design/DAG7MfFOGGg/kM2dT1WEx4qEWqaTmwEo7g/edit?utm_content=DAG7MfFOGGg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-
+- Hosting Link: (https://moodtune.free.nf/public/landing.php)
 ## 🙏 Acknowledgments
 
 - [Rubix ML](https://rubixml.github.io/ML/) - Powerful PHP machine learning library
