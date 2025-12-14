@@ -12,45 +12,6 @@ class MoodClassifier
     private $classifier;
     private $isTrained = false;
 
-    // Demo mode thresholds for easy mood triggering
-    private const DEMO_THRESHOLDS = [
-        'happy' => [
-            'min_mouse_speed' => 40,
-            'min_click_rate' => 1.5,
-            'max_typing_interval' => 300,
-            'description' => 'Move mouse FAST, Click FREQUENTLY (1.5+ clicks/sec), Type QUICKLY'
-        ],
-        'excited' => [
-            'min_mouse_speed' => 50,
-            'min_click_rate' => 2.0,
-            'min_variance' => 800,
-            'description' => 'Move mouse VERY FAST with ERRATIC movements, Click RAPIDLY (2+ clicks/sec)'
-        ],
-        'calm' => [
-            'max_mouse_speed' => 20,
-            'max_click_rate' => 0.5,
-            'min_typing_interval' => 600,
-            'description' => 'Move mouse SLOWLY, Click RARELY (< 0.5 clicks/sec), Type SLOWLY'
-        ],
-        'sad' => [
-            'max_mouse_speed' => 15,
-            'max_click_rate' => 0.3,
-            'min_variance' => 200,
-            'description' => 'Move mouse VERY SLOWLY with irregular pauses, Almost NO clicks'
-        ],
-        'anxious' => [
-            'mouse_speed' => [30, 60],
-            'min_variance' => 1000,
-            'min_click_rate' => 1.0,
-            'description' => 'Move mouse with JERKY, ERRATIC movements, Click INCONSISTENTLY'
-        ],
-        'neutral' => [
-            'mouse_speed' => [25, 35],
-            'click_rate' => [0.5, 1.2],
-            'description' => 'Move mouse at NORMAL pace, Click at REGULAR intervals'
-        ]
-    ];
-
     public function __construct()
     {
         // Initialize K-Nearest Neighbors classifier with Rubix ML
