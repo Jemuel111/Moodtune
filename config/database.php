@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'host' => 'localhost',
-    'database' => 'moodtune_db',
-    'username' => 'root',
-    'password' => '',
+    'host' => 'sql202.infinityfree.com',
+    'database' => 'if0_40673463_moodtune',
+    'username' => 'if0_40673463',
+    'password' => '112427090035',
     'charset' => 'utf8mb4',
     'options' => [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,

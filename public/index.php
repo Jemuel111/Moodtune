@@ -11,7 +11,7 @@ session_start();
 </head>
 <body>
     <div class="container">
-        <h1>🎵 HearYou</h1>
+        <h1>🎵 MoodTune</h1>
         <p class="subtitle">PHP Machine Learning Music Recommendations</p>
         <div class="tech-badge">Powered by Rubix ML + PHP</div>
 
